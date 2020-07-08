@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/长网页4.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <style>
+        .carousel {
+            width: 100%;
+            display: inline-block;
+            /*border: 10px solid #000;*/
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .carousel_img {
+            height: 602px;
+            overflow: hidden;
+            position: relative;
+            left: 0;
+            transition: all 2s;
+        }
+        
+        .carousel_img>img {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: all 1s;
+        }
+        
+        .carousel_img>img:nth-of-type(4) {
+            position: static;
+        }
+        
+        .carousel>button {
+            width: 50px;
+            height: 50px;
+            border: 1px solid #000;
+            background: rgba(0, 0, 0, .5);
+            font-size: 20px;
+            border-radius: 50%;
+            color: #fff;
+            cursor: pointer;
+            outline: none;
+            position: absolute;
+            top: 50%;
+            margin-top: -25px;
+        }
+        
+        .carousel>button:nth-of-type(1) {
+            left: 20px;
+        }
+        
+        .carousel>button:nth-of-type(2) {
+            right: 20px;
+        }
+        
+        .carousel>button:hover {
+            background: rgba(0, 0, 0, .7);
+        }
+        
+        .carousel>button:active {
+            background: rgba(0, 0, 0, .9);
+        }
+        
+        .carousel>ul {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            width: 58px;
+            text-align: center;
+            margin-left: -29px;
+        }
+        
+        .carousel li {
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            background: #fff;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        
+        .carousel li.active {
+            background: palegreen;
+        }
+        
+        img.active {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="header-logo">
+                <img src="images/logo.jpg" alt="">
+            </div>
+            <div class="header-right">
+                <div class="title">
+                    <div class="headerTxt">
+                        <a href="#">首页/注册</a>
+                    </div>
+                    <div class="headerInput">
+                        <input type="text" placeholder="SEARCH">
+                        <em class="iconfont icon-Magnifier"></em>
+                    </div>
+                </div>
+                <ul class="nav-list">
+                    <li>
+                        <a href="#">首页</a>
+                    </li>
+                    <li>
+                        <a href="#">拍摄基地</a>
+                    </li>
+                    <li>
+                        <a href="#">真实客照</a>
+                    </li>
+                    <li>
+                        <a href="#">选择影师</a>
+                    </li>
+                    <li>
+                        <a href="#">礼服妆容</a>
+                    </li>
+                    <li>
+                        <a href="#">公司简介</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- banner -->
+        <div class="carousel">
+            <div class="carousel_img">
+                <img class="active" src="images/1.jpg" />
+                <img src="images/2.jpg" />
+                <img src="images/3.jpg" />
+                <img src="images/3.jpg" />
+            </div>
+            <button><</button>
+            <button>></button>
+            <ul>
+                <li tt="0" class="active"></li>
+                <li tt="1"></li>
+                <li tt="2"></li>
+            </ul>
+        </div>
+        <!-- banner结束 -->
+        <!-- content -->
+        <div class="content">
+            <div class="title-right">
+                首页: <a href="#">&nbsp;&nbsp;&nbsp;&nbsp;真实客照 ></a><span>简约风</span>
+            </div>
+            <div class="main">
+                <div class="main-left">
+                    <div class="word">
+                        <h3>真实客照</h3>
+                        <p>中国风&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+</p>
+                        <p>简约风&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-</p>
+                        <p>田园风&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+</p>
+                    </div>
+                </div>
+                <div class="main-right">
+                    <h4>简约风/<span>WEDDING PHOTOS</span>
+                    </h4>
+                    <p>适合独立意识强的女孩精湛的剪裁和高档的面料是极简派过人之处极简的线条往往最能烘托出穿衣人的特质它可以非常好地体现婚纱的档次与品质,使新娘在众人中脱颖而出。消费者可以针对摄影与造型参考亲友或网友实际的婚纱照片,也可以多翻阅市面上的新娘杂志,找出自己喜欢的风格,婚妙影楼提供的样本照片只能参考不能全然相信,在拍照前夕多与摄影师、造型师沟通,最好要用自己搜集来的婚纱照片展示给他们看,婚纱摄影工作室是为展现新人的特色的,所以要选择最适合自己的风格。在整个婚纱照市场,拍摄婚纱照的选择有两大方向,影楼和个性的摄影工作室.
+                    </p>
+                </div>
+            </div>
+            <div class="img">
+                <div class="img-1">
+                    <img src="images/pic1.jpg" alt="">
+                    <p>蕾丝长袖婚纱</p>
+                </div>
+                <div class="img-2">
+                    <img src="images/pic2.jpg" alt="">
+                    <p>拖尾婚纱</p>
+                </div>
+                <div class="img-3">
+                    <img src="images/pic3.jpg" alt="">
+                    <p>蓬裙型婚纱</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div id="footer">
+            &copy;COPYRIGHT 2009-2017 版权所有 重庆金夫人实业有限公司增值电信业务许可证: 渝ICP备11007647号-13 技术支持: 成都岸境科技
+        </div>
+    </div>
+    <script src="js/4.js"></script>
+</body>
+
+</html>

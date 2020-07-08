@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/长网页3.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <style>
+        .carousel {
+            width: 100%;
+            display: inline-block;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .carousel_img {
+            height: 602px;
+            overflow: hidden;
+            position: relative;
+            left: 0;
+            transition: all 2s;
+        }
+        
+        .carousel_img>img {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: all 1s;
+        }
+        
+        .carousel_img>img:nth-of-type(4) {
+            position: static;
+        }
+        
+        .carousel>button {
+            width: 50px;
+            height: 50px;
+            border: 1px solid #000;
+            background: rgba(0, 0, 0, .5);
+            font-size: 20px;
+            border-radius: 50%;
+            color: #fff;
+            cursor: pointer;
+            outline: none;
+            position: absolute;
+            top: 50%;
+            margin-top: -25px;
+        }
+        
+        .carousel>button:nth-of-type(1) {
+            left: 20px;
+        }
+        
+        .carousel>button:nth-of-type(2) {
+            right: 20px;
+        }
+        
+        .carousel>button:hover {
+            background: rgba(0, 0, 0, .7);
+        }
+        
+        .carousel>button:active {
+            background: rgba(0, 0, 0, .9);
+        }
+        
+        .carousel>ul {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            width: 58px;
+            text-align: center;
+            margin-left: -29px;
+        }
+        
+        .carousel li {
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            background: #fff;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        
+        .carousel li.active {
+            background: palegreen;
+        }
+        
+        img.active {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="header-logo">
+                <img src="images/logo.jpg" alt="">
+            </div>
+            <div class="header-right">
+                <div class="title">
+                    <div class="headerTxt">
+                        <a href="#">首页/注册</a>
+                    </div>
+                    <div class="headerInput">
+                        <input type="text" placeholder="SEARCH">
+                        <em class="iconfont icon-Magnifier"></em>
+                    </div>
+                </div>
+                <ul class="nav-list">
+                    <li>
+                        <a href="#">首页</a>
+                    </li>
+                    <li>
+                        <a href="#">拍摄基地</a>
+                    </li>
+                    <li>
+                        <a href="#">真实客照</a>
+                    </li>
+                    <li>
+                        <a href="#">选择影师</a>
+                    </li>
+                    <li>
+                        <a href="#">礼服妆容</a>
+                    </li>
+                    <li>
+                        <a href="#">公司简介</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- banner -->
+        <div class="carousel">
+            <div class="carousel_img">
+                <img class="active" src="images/1.jpg" />
+                <img src="images/2.jpg" />
+                <img src="images/3.jpg" />
+                <img src="images/3.jpg" />
+            </div>
+            <button><</button>
+            <button>></button>
+            <ul>
+                <li tt="0" class="active"></li>
+                <li tt="1"></li>
+                <li tt="2"></li>
+            </ul>
+        </div>
+        <!-- banner结束 -->
+        <!-- content -->
+        <div class="main">
+            <div class="title-right">
+                首页: <a href="#">选择摄影 ＞</a><span>陈漫</span>
+            </div>
+            <div class="content-left">
+                <h4>选择摄影</h4>
+                <p>陈漫 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;－</p>
+                <p>陈墨墨 &nbsp;&nbsp;&nbsp;＋</p>
+                <p>张悦 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;＋</p>
+                <p>尤奕 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;＋</p>
+                <p>尹超 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;＋</p>
+                <p>童梦 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;＋</p>
+            </div>
+            <div class="content-right">
+                <dl>
+                    <dt>
+                        <h4>陈漫<span>CHENMAN</span></h4>
+                    </dt>
+                    <dd>
+                        <p>
+                            陈漫( ChenMan)，中国时尚摄影师视觉艺术家，毕业于中央美术学院，2003年 ，陈漫开始为(青年视觉》杂志拍摄封面:之后，凭借系列为(青年视觉》拍摄的作品,在时尚圈崭露头角。2011年4月23 日在北京今日美术馆推出个人摄影装置展:11月，"陈漫视觉艺术展” 在上海当代艺术馆展出。2012年 为(-D)杂志创作了12幅名为Whatever the Weather的系列作品。2014年7月1日 ，与张靓颖第 三次合作封面设计的第七感》封面正式公布。2015年9月,陈漫的作品
+                        </p>
+                        <p>
+                            自2003年被造型师李东田发掘后，凭借系列为(青年视觉)拍摄的独树帆具有强烈视觉冲击感的作品陈漫开始受到关注。成为众多明星偏爱的摄影师。她的摄影生涯清晰地划出三个分水岭。前期在(青年 视觉}时期,运用大量PS技术，浓量重彩;其后返璞归真，以寸照片式的极简和写实见长，人送”灯大师”一只用 盛灯打光,而无后期;再之后是自由创作,尝试摄影的多种可能
+                        </p>
+                    </dd>
+                    <img src="images/content-img_03.jpg" alt="">
+                </dl>
+            </div>
+            <div class="exhibition">
+                <h4>作品展示<span>EXHIBITION OF WORKS</span></h4>
+            </div>
+            <div class="imgs">
+                <img src="images/pic1.jpg" alt="" class="img1">
+                <img src="images/pic2.jpg" alt="" class="img2">
+                <img src="images/pic3.jpg" alt="" class="img3">
+                <img src="images/pic4.jpg" alt="">
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div id="footer">
+            &copy;COPYRIGHT 2009-2017 版权所有 重庆金夫人实业有限公司增值电信业务许可证: 渝ICP备11007647号-13 技术支持: 成都岸境科技
+        </div>
+    </div>
+    <script src="js/3.js"></script>
+</body>
+
+</html>

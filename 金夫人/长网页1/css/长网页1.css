@@ -1,0 +1,295 @@
+.wrap {
+    width: 100%;
+    /* height: 5000px; */
+}
+
+.header {
+    width: 1200px;
+    /* height: 118px; */
+    margin: auto;
+    background: pink;
+}
+
+.header-logo {
+    float: left;
+}
+
+.header-right {
+    float: right;
+}
+
+.title {
+    overflow: hidden;
+}
+
+.header-logo img {
+    height: 118px;
+}
+
+.header-right .headerTxt {
+    float: right;
+    margin-top: 18px;
+}
+
+.headerTxt a {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 16px;
+    color: #343434;
+}
+
+.headerInput {
+    position: relative;
+}
+
+.headerInput em {
+    position: absolute;
+    top: 4px;
+    left: 134px;
+    cursor: pointer;
+}
+
+.header-right .headerInput {
+    float: right;
+    margin-top: 17px;
+}
+
+.headerInput ::placeholder {
+    font-size: 14px;
+    opacity: .5;
+    padding-left: 6px;
+}
+
+.header-right .headerInput input {
+    border-radius: 6px;
+    border: 1px solid #333333;
+    margin-right: 37px;
+}
+
+.header-right .nav-list {
+    float: right;
+}
+
+.nav-list {
+    line-height: 76px;
+}
+
+.nav-list li {
+    /* border: 3px solid #000; */
+    float: left;
+    margin-left: 58px;
+}
+
+.nav-list a {
+    font-size: 18px;
+    color: #333333;
+    line-height: 18px;
+    padding-bottom: 8px;
+}
+
+.nav-list li:hover a {
+    border-bottom: 2px solid #850913;
+}
+
+.main {
+    width: 1200px;
+    height: 810px;
+    /* background: pink; */
+    margin: auto;
+}
+
+.main .title-right {
+    text-align: right;
+    width: 1188px;
+    height: 48px;
+    line-height: 60px;
+    margin-left: 14px;
+    border-bottom: 1px solid #666666;
+    font-size: 14px;
+    color: #343434;
+}
+
+.title-right span {
+    color: #808080;
+}
+
+.title-right a {
+    color: #850712;
+}
+
+.list-left {
+    float: left;
+    margin-left: 14px;
+    border-left: 1px solid #666666;
+}
+
+.list-left h4 {
+    width: 126px;
+    height: 34px;
+    border-right: 1px solid #666666;
+    border-bottom: 1px solid #666666;
+    text-align: center;
+    line-height: 34px;
+    font-size: 22px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.list-left ul {
+    margin-left: 16px;
+    line-height: 20px;
+}
+
+.list-left ul li {
+    font-size: 16px;
+    color: #323232;
+    cursor: pointer;
+}
+
+.list-left ul li dd {
+    font-size: 12px;
+    color: #676767;
+}
+
+.list-left ul li:first-child {
+    color: #830914;
+}
+
+.list-left ul li:first-child dl dd:first-child {
+    color: #830914;
+    border-bottom: 1px solid #999999;
+    width: 112px;
+}
+
+.content-right {
+    position: relative;
+    width: 846px;
+    height: 346px;
+    /* background: orange; */
+    float: right;
+    border: 1px solid #666666;
+    margin-top: 64px;
+}
+
+.content-right .title-txt {
+    width: 194px;
+    height: 44px;
+    border: 1px solid #666666;
+    text-align: center;
+}
+
+.title-txt {
+    position: absolute;
+    top: -22px;
+    right: 234px;
+    background: #ffffff;
+}
+
+.content-right {
+    margin-bottom: 54px;
+}
+
+.title-txt h4 {
+    position: absolute;
+    font-size: 22px;
+    color: #333333;
+    left: 44px;
+    top: -16px;
+    background: #ffffff;
+}
+
+.title-txt p {
+    position: absolute;
+    font-size: 11px;
+    color: #666666;
+    left: 20px;
+    bottom: 6px;
+}
+
+.content-right dl dd {
+    width: 630px;
+    /* height: 254px; */
+    float: right;
+    margin-right: 16px;
+    text-align: justify;
+    line-height: 20px;
+}
+
+.content-right dl dd p {
+    font-size: 13px;
+    color: #666666;
+}
+
+.content-right dl {
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+dl dd p:first-child {
+    margin-top: 20px;
+    margin-bottom: 32px;
+}
+
+dl dd p:nth-child(2) {
+    margin-bottom: 29px;
+}
+
+.none {
+    width: 242px;
+    height: 343px;
+    background: #666666;
+    position: absolute;
+    left: -252px;
+    top: -40px;
+}
+
+dl dt img {
+    position: absolute;
+    left: -290px;
+    top: -74px;
+    z-index: 1;
+}
+
+.pics {
+    position: relative;
+    width: 944px;
+    height: 276px;
+    margin-left: 295px;
+}
+
+.pics em {
+    position: absolute;
+    background: url(../images/left.jpg)no-repeat;
+    width: 15px;
+    height: 46px;
+    left: -28px;
+    bottom: -302px;
+}
+
+.pics i {
+    position: absolute;
+    background: url(../images/right.jpg)no-repeat;
+    width: 15px;
+    height: 46px;
+    right: 46px;
+    bottom: -302px;
+}
+
+.pics img:nth-of-type(2) {
+    margin-left: 15px;
+}
+
+.pics img:nth-of-type(3) {
+    margin-left: 12px;
+}
+
+#footer {
+    width: 100%;
+    height: 91px;
+    background: #666666;
+    text-align: center;
+    line-height: 91px;
+    font-size: 14px;
+    color: #ffffff;
+}

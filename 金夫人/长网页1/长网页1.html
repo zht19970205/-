@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/长网页1.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <style>
+        .carousel {
+            width: 100%;
+            display: inline-block;
+            /*border: 10px solid #000;*/
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .carousel_img {
+            height: 602px;
+            overflow: hidden;
+            position: relative;
+            left: 0;
+            transition: all 2s;
+        }
+        
+        .carousel_img>img {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: all 1s;
+        }
+        
+        .carousel_img>img:nth-of-type(4) {
+            position: static;
+        }
+        
+        .carousel>button {
+            width: 50px;
+            height: 50px;
+            border: 1px solid #000;
+            background: rgba(0, 0, 0, .5);
+            font-size: 20px;
+            border-radius: 50%;
+            color: #fff;
+            cursor: pointer;
+            outline: none;
+            position: absolute;
+            top: 50%;
+            margin-top: -25px;
+        }
+        
+        .carousel>button:nth-of-type(1) {
+            left: 20px;
+        }
+        
+        .carousel>button:nth-of-type(2) {
+            right: 20px;
+        }
+        
+        .carousel>button:hover {
+            background: rgba(0, 0, 0, .7);
+        }
+        
+        .carousel>button:active {
+            background: rgba(0, 0, 0, .9);
+        }
+        
+        .carousel>ul {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            width: 58px;
+            text-align: center;
+            margin-left: -29px;
+        }
+        
+        .carousel li {
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            background: #fff;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        
+        .carousel li.active {
+            background: palegreen;
+        }
+        
+        img.active {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="header-logo">
+                <img src="images/logo.jpg" alt="">
+            </div>
+            <div class="header-right">
+                <div class="title">
+                    <div class="headerTxt">
+                        <a href="#">首页/注册</a>
+                    </div>
+                    <div class="headerInput">
+                        <input type="text" placeholder="SEARCH">
+                        <em class="iconfont icon-Magnifier"></em>
+                    </div>
+                </div>
+                <ul class="nav-list">
+                    <li>
+                        <a href="#">首页</a>
+                    </li>
+                    <li>
+                        <a href="#">拍摄基地</a>
+                    </li>
+                    <li>
+                        <a href="#">真实客照</a>
+                    </li>
+                    <li>
+                        <a href="#">选择影师</a>
+                    </li>
+                    <li>
+                        <a href="#">礼服妆容</a>
+                    </li>
+                    <li>
+                        <a href="#">公司简介</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- banner -->
+        <div class="carousel">
+            <div class="carousel_img">
+                <img class="active" src="images/1.jpg" />
+                <img src="images/2.jpg" />
+                <img src="images/3.jpg" />
+                <img src="images/3.jpg" />
+            </div>
+            <button><</button>
+            <button>></button>
+            <ul>
+                <li tt="0" class="active"></li>
+                <li tt="1"></li>
+                <li tt="2"></li>
+            </ul>
+        </div>
+        <!-- banner结束 -->
+        <!-- content -->
+        <div class="main">
+            <div class="title-right">
+                首页: <span>拍摄基地 ＞ 湖畔公主馆 ＞ </span><a href="#"> 卢森堡长廊</a>
+            </div>
+            <div class="list-left">
+                <h4>拍摄基地</h4>
+                <ul>
+                    <li>
+                        湖畔公主馆<span>－</span>
+                        <dl>
+                            <dd>卢森堡长廊</dd>
+                            <dd>星辰水晶教堂</dd>
+                            <dd>圣恩教堂</dd>
+                            <dd>依云湖</dd>
+                        </dl>
+                    </li>
+                    <li>星光 · 夏朵<span>＋</span>
+                        <dl>
+                            <dd>卢森堡长廊</dd>
+                            <dd>星辰水晶教堂</dd>
+                            <dd>圣恩教堂</dd>
+                            <dd>依云湖</dd>
+                        </dl>
+                    </li>
+                    <li>秘密花园<span>＋</span>
+                        <dl>
+                            <dd>卢森堡长廊</dd>
+                            <dd>星辰水晶教堂</dd>
+                            <dd>圣恩教堂</dd>
+                            <dd>依云湖</dd>
+                        </dl>
+                    </li>
+                    <li>梦幻空间<span>＋</span>
+                        <dl>
+                            <dd>卢森堡长廊</dd>
+                            <dd>星辰水晶教堂</dd>
+                            <dd>圣恩教堂</dd>
+                            <dd>依云湖</dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="content-right">
+                <div class="title-txt">
+                    <h4>卢森堡长廊</h4>
+                    <p>LUXEMBURG CORRIDOR</p>
+                </div>
+                <dl>
+                    <dt>
+                        <img src="images/img1.jpg" alt="">
+                    </dt>
+                    <div class="none"></div>
+                    <dd>
+                        <p class="word-1">卢森堡公园(法语: JARDIN DU LUXEMBOURG)是一座处于巴黎第六区，拉丁区中央的公园，于1612 年玛丽.德.美第奇的统治下建成。卢森堡公园面积为224,500平方米，有巨大的梧桐大道与花园、喷泉，以及许多上古智者的雕像,还有皇帝的别宫卢森堡宫(PALAIS DU LUXEMBOURG)，是国会议员的宿舍。
+                        </p>
+                        <p>卢森堡公园还与亨利四世有关，但比浮日广场晚些，公园内的宫殿是亨利四世被刺后为玛丽皇后建造的 不知道这位皇太后会不会也像中国的那些年轻的太后们一样对于权力很感兴趣，只是看到一个略大于街 心花园的树丛、塑像、有棱角的小径、散落在各个角落里的座椅组成的公园。
+                        </p>
+                        <p>
+                            以前读过陈从周的一篇谈中国园林变成公众游览地后的接待困难的文章，内中分析了私家园林和公众园 林区别，今天算是在这儿映证了。整个卢森堡公园向四面八方敞开,园中的道路是平直的，树冠很高增加了视觉的通透性，中央水池和花坛周围有大量的空地。
+                        </p>
+                    </dd>
+                </dl>
+
+            </div>
+            <div class="pics">
+                <em></em>
+                <img src="images/pic1.jpg" alt="">
+                <img src="images/pic2.jpg" alt="">
+                <img src="images/pic3.jpg" alt="">
+                <i></i>
+            </div>
+        </div>
+
+        <div id="footer">
+            &copy;COPYRIGHT 2009-2017 版权所有 重庆金夫人实业有限公司增值电信业务许可证: 渝ICP备11007647号-13 技术支持: 成都岸境科技
+        </div>
+    </div>
+    <script src="js/1.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+html, body {
+    height: 100%;
+}
+
+.wrap {
+    width: 100%;
+    background: #fff;
+}
+
+.content {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.content img {
+    width: 100%;
+}
+
+.content h2 {
+    font-size: 46px;
+    line-height: 46px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 1);
+    margin-top: 101px;
+    margin-bottom: 29px;
+}
+
+.content p {
+    font-size: 28px;
+    line-height: 28px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 1);
+}
+
+.content article {
+    display: flex;
+    margin-top: 76px;
+}
+
+.content article a {
+    display: flex;
+    width: 140px;
+    height: 47px;
+    line-height: 47px;
+    border: 1px solid #333333;
+    border-radius: 25px;
+    margin: 0px 34px;
+    justify-content: center;
+    font-size: 24px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 1);
+}

@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a,u {
+    text-decoration: none;
+    color: #000;
+}
+ul,ol,li {
+    list-style: none;
+}
+img {
+    border: none;
+    vertical-align: top;
+}
+input {
+    outline: none;
+}
+textarea {
+    resize: none;
+}
